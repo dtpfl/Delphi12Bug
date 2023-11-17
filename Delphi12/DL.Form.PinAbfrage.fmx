@@ -1,0 +1,162 @@
+object DLFormPinAbfrage: TDLFormPinAbfrage
+  Left = 0
+  Top = 0
+  Caption = 'PIN eingeben'
+  ClientHeight = 480
+  ClientWidth = 468
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object EPinEingabe: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    KeyboardType = DecimalNumberPad
+    Password = True
+    MaxLength = 5
+    Position.X = 64.000000000000000000
+    Position.Y = 166.000000000000000000
+    HitTest = False
+    Opacity = 0.000000000000000000
+    Size.Width = 167.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    OnChangeTracking = EPinEingabeChangeTracking
+  end
+  object recPinEingabe: TRectangle
+    Align = Top
+    Fill.Color = claWhite
+    Size.Width = 468.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Rectangle1: TRectangle
+      Align = Center
+      Fill.Kind = None
+      Size.Width = 309.000000000000000000
+      Size.Height = 69.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Rectangle2: TRectangle
+        Align = Left
+        Fill.Kind = None
+        Size.Width = 50.000000000000000000
+        Size.Height = 69.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 6.000000000000000000
+        YRadius = 6.000000000000000000
+        object recPin0: TRoundRect
+          Align = Center
+          Fill.Color = claBlack
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object Rectangle3: TRectangle
+        Align = Left
+        Fill.Kind = None
+        Margins.Left = 15.000000000000000000
+        Position.X = 260.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 69.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 6.000000000000000000
+        YRadius = 6.000000000000000000
+        object recPin4: TRoundRect
+          Align = Center
+          Fill.Color = claBlack
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object Rectangle4: TRectangle
+        Align = Left
+        Fill.Kind = None
+        Margins.Left = 15.000000000000000000
+        Position.X = 195.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 69.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 6.000000000000000000
+        YRadius = 6.000000000000000000
+        object recPin3: TRoundRect
+          Align = Center
+          Fill.Color = claBlack
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object Rectangle5: TRectangle
+        Align = Left
+        Fill.Kind = None
+        Margins.Left = 15.000000000000000000
+        Position.X = 130.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 69.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 6.000000000000000000
+        YRadius = 6.000000000000000000
+        object recPin2: TRoundRect
+          Align = Center
+          Fill.Color = claBlack
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object Rectangle6: TRectangle
+        Align = Left
+        Fill.Kind = None
+        Margins.Left = 15.000000000000000000
+        Position.X = 65.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 69.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 6.000000000000000000
+        YRadius = 6.000000000000000000
+        object recPin1: TRoundRect
+          Align = Center
+          Fill.Color = claBlack
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+    end
+    object ColorAnimError: TColorAnimation
+      Duration = 5.000000000000000000
+      Interpolation = Sinusoidal
+      Inverse = True
+      PropertyName = 'Fill.Color'
+      StartValue = claRed
+      StartFromCurrent = True
+      StopValue = claRed
+    end
+    object ShadowEffect3: TShadowEffect
+      Distance = 2.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.300000011920929000
+      ShadowColor = claBlack
+    end
+  end
+  object Label1: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 175.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Trimming = None
+    Text = 'type 12345'
+    TabOrder = 3
+  end
+end
